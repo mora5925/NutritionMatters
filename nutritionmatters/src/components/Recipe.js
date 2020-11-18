@@ -1,4 +1,6 @@
+
 import React from 'react'
+import RecipeDetails from './RecipeDetail'
 
  const Recipe = ({label, image, url, ingredients}) => {
   return (
@@ -10,6 +12,7 @@ import React from 'react'
         URL
       </a>
       <button>ingredients</button>
+      <RecipeDetails ingredients={ingredients}/>
       </div>
   );
 };
