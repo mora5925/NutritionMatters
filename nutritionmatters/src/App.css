@@ -15,17 +15,22 @@ html {
 
 .page-message {
   font-size: 400%;
-  color: #40b48e;
+  color: #a61a1d;
   font-family: monospace;
 
 }
 
 .page-words{
   font-size: 400%;
-  color: #40b48e;
+  color: #FF7733;
 }
 
 .App {
+  background-image: url("https://previews.123rf.com/images/seralexvi/seralexvi1605/seralexvi160500008/56276949-fruits-and-vegetables-healthy-food-concept-frame.jpg");
+ background-position: flex;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +40,7 @@ h1 {
   font-size: 8rem;
   letter-spacing: 0.1rem;
   font-style: italic;
-  color: #40b48e;
+  color: #FFF2B3;
   text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
   text-transform: uppercase;
   margin: 4rem 0;
@@ -54,7 +59,7 @@ h1 {
   position: relative;
 }
 .search-button {
-  background:#40b48e ;
+  background: #FF7733;
   border: none;
   padding:5px 20px ;
   color: white;
@@ -67,6 +72,7 @@ h1 {
   margin: 0 0.5rem;
   border-radius: 0.5rem;
   height: 3rem;
+  
 }
 
 .search-form input[type="text"] {

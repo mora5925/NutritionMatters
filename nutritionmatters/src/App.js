@@ -58,7 +58,7 @@ const getSearch = e => {
             1000,
             'EASY',
             1000,
-            'OR Unwashed',
+            'OR UnWashed',
             1000,
             'search now '
             
