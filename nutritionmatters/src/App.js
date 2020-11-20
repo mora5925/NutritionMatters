@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 import './App.css';
 import Recipe from './components/Recipe';
+import Typical from 'react-typical'
 
 const App = () =>{
 const APP_ID = "48a1943a";
@@ -43,6 +44,27 @@ const getSearch = e => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch}  />
         <button className="search-button" type="submit">search</button>
       </form>
+      <h2 className="page-message">YOU ARE WHAT YOU EAT SO</h2>
+      <p className="page-words">
+        <Typical
+          Loop={Infinity}
+          wrapper="b"
+          steps={[
+            'DONT BE',
+            1000,
+            'FAST',
+            1000,
+            'CHEAP',
+            1000,
+            'EASY',
+            1000,
+            'OR FAKE',
+            1000,
+            'search now '
+            
+          ]}
+          />
+      </p>
       <div className="recipes">
       {recipes.map(recipe => (
         <Recipe 
