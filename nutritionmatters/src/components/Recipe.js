@@ -1,8 +1,9 @@
 
-import React from 'react'
+import React, { useState } from "react";
 import RecipeDetails from './RecipeDetail'
 
  const Recipe = ({label, image, url, ingredients}) => {
+  const [show, setShow] = useState(false);
   return (
     <div className="recipe">
       <h2>{label}</h2>
@@ -11,8 +12,8 @@ import RecipeDetails from './RecipeDetail'
       rel="noopener noreferrer">
         URL
       </a>
-      <button>ingredients</button>
-      <RecipeDetails ingredients={ingredients}/>
+      <button onClick={() => setShow(!show)}>Ingredients</button>
+      {show && <RecipeDetails ingredients={ingredients} />}
       </div>
   );
 };

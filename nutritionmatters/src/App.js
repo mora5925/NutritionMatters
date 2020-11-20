@@ -9,7 +9,7 @@ const APP_KEY = "4d91ea04b25be1b008370b4b06638440";
 
 const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState(' ');
-const [query, setQuery] = useState('chicken');
+const [query, setQuery] = useState('');
 
 useEffect (() => {
   getRecipes ();
@@ -38,7 +38,7 @@ const getSearch = e => {
 
   return (
     <div className="App">
-      <h1>Nutrition Matters</h1>
+      <h1>Chef's Menu</h1>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}  />
         <button className="search-button" type="submit">search</button>
