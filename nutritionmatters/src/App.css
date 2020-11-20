@@ -60,6 +60,13 @@ h1 {
   text-align: center;
 }
 
+.search-button {
+  background:#40b48e ;
+  border: none;
+  padding:5px 20px ;
+  color: white;
+}
+
 .search-form input {
   font-size: 1.6rem;
   border: none;
