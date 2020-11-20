@@ -11,6 +11,11 @@
 
 html {
   font-size: 62.5%;
+  background-image: url("https://previews.123rf.com/images/seralexvi/seralexvi1605/seralexvi160500008/56276949-fruits-and-vegetables-healthy-food-concept-frame.jpg");
+  background-position: flex;
+   min-width: 100%;
+   min-height: 100%;
+   background-size: cover;
 }
 
 .page-message {
@@ -26,11 +31,7 @@ html {
 }
 
 .App {
-  background-image: url("https://previews.123rf.com/images/seralexvi/seralexvi1605/seralexvi160500008/56276949-fruits-and-vegetables-healthy-food-concept-frame.jpg");
- background-position: flex;
-  min-width: 100%;
-  min-height: 100%;
-  background-size: cover;
+
   display: flex;
   flex-direction: column;
   align-items: center;
