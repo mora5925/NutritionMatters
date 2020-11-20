@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import './App.css';
 import Recipe from './components/Recipe';
-import Typical from 'react-typical'
+import Typical from 'react-typical';
 
 const App = () =>{
 const APP_ID = "48a1943a";
@@ -58,7 +58,7 @@ const getSearch = e => {
             1000,
             'EASY',
             1000,
-            'OR FAKE',
+            'OR Unwashed',
             1000,
             'search now '
             
@@ -76,7 +76,7 @@ const getSearch = e => {
 
         />
 
-      ))};
+      ))}
 
       </div>
     </div>
