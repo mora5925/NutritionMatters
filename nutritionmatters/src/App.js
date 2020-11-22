@@ -3,7 +3,8 @@ import './App.css';
 import Recipe from './components/Recipe';
 import Typical from 'react-typical'
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router,  } from 'react-router-dom';
+
 
 const App = () =>{
 const APP_ID = "48a1943a";
@@ -48,6 +49,7 @@ const onSubmit = e => {
     <div className="App">
       <Router>
         <Navbar />
+       
       </Router>
       <h1>CHEF'S SECRET</h1>
       <form onSubmit={onSubmit} className="search-form">
