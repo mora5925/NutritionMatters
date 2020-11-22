@@ -1,7 +1,9 @@
 import React,{useEffect, useState} from "react";
 import './App.css';
 import Recipe from './components/Recipe';
-import Typical from 'react-typical';
+import Typical from 'react-typical'
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () =>{
 const APP_ID = "48a1943a";
@@ -12,12 +14,15 @@ const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState(' ');
 const [query, setQuery] = useState('');
 
+
+
 useEffect (() => {
   getRecipes ();
   
 }, [query]);
 
 const getRecipes = async () =>{
+  
   const response = await fetch(
     `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
   );
@@ -31,19 +36,25 @@ const updateSearch = e => {
 setSearch(e.target.value);
 };
 
-const getSearch = e => {
+const onSubmit = e => {
   e.preventDefault();
   setQuery(search)
   setSearch('');
 }
 
+
+
   return (
     <div className="App">
-      <h1>Chef's Menu</h1>
-      <form onSubmit={getSearch} className="search-form">
+      <Router>
+        <Navbar />
+      </Router>
+      <h1>CHEF'S SECRET</h1>
+      <form onSubmit={onSubmit} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}  />
         <button className="search-button" type="submit">search</button>
       </form>
+      
       <h2 className="page-message">YOU ARE WHAT YOU EAT SO</h2>
       <p className="page-words">
         <Typical
@@ -58,13 +69,14 @@ const getSearch = e => {
             1000,
             'EASY',
             1000,
-            'OR UnWashed',
+            'OR FAKE',
             1000,
             'search now '
             
           ]}
           />
       </p>
+
       <div className="recipes">
       {recipes.map(recipe => (
         <Recipe 
@@ -73,10 +85,11 @@ const getSearch = e => {
         image={recipe.recipe.image}
         url={recipe.recipe.url}
         ingredients={recipe.recipe.ingredients}
+        calories={recipe.recipe.calories}
 
         />
 
-      ))}
+      ))};
 
       </div>
     </div>

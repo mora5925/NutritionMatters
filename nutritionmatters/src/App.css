@@ -9,9 +9,11 @@
   outline: none;
 }
 
+
+
 html {
   font-size: 62.5%;
-  background-image: url("https://previews.123rf.com/images/seralexvi/seralexvi1605/seralexvi160500008/56276949-fruits-and-vegetables-healthy-food-concept-frame.jpg");
+  background-image: url("https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.0-9/127117373_10160568095047907_3798533035735681139_o.jpg?_nc_cat=101&ccb=2&_nc_sid=8024bb&_nc_ohc=ZWYowu2mO5wAX_nD4sL&_nc_ht=scontent.ftpa1-1.fna&oh=222166835240d7a8bfbe66fc54801fba&oe=5FE0B20B");
   background-position: flex;
    min-width: 100%;
    min-height: 100%;
@@ -19,15 +21,15 @@ html {
 }
 
 .page-message {
-  font-size: 400%;
-  color: #a61a1d;
+  font-size: 500%;
+  color: #40b48e;
   font-family: monospace;
 
 }
 
 .page-words{
-  font-size: 400%;
-  color: #FF7733;
+  font-size: 500%;
+  color: #40b48e;
 }
 
 .App {
@@ -40,11 +42,11 @@ html {
 h1 {
   font-size: 8rem;
   letter-spacing: 0.1rem;
-  font-style: italic;
-  color: #FFF2B3;
+  font-family: italic;
+  color: black;
   text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
   text-transform: uppercase;
-  margin: 4rem 0;
+  margin: 0rem 0;
 }
 
 .search-form {
@@ -53,17 +55,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d3d3d3;
+  background-color: none;
   border-radius: 0.5rem;
   margin-bottom: 5rem;
   box-shadow: 1rem 2rem 5rem #aaa;
   position: relative;
 }
-.search-button {
-  background: #FF7733;
-  border: none;
-  padding:5px 20px ;
-  color: white;
+
+.search-button{
+  width: 25%;
+  text-transform: uppercase;
+  background-color: #40b48e;
+  color: #fff;
+  height: 3rem;
+  border-radius: 0.5rem;
 }
 
 .search-form input {
@@ -86,7 +91,7 @@ h1 {
   width: 25%;
   text-transform: uppercase;
   background-color: #40b48e;
-  color: #fff;
+  color: black;
 }
 
 .recipes {
